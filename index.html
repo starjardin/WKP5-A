@@ -5,8 +5,73 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WKP5</title>
 	</head>
+	<style>
+		@font-face {
+			font-family: "Lato";
+			src: local("Lato-Regular");
+		}
+
+		body {
+			font-family: "Lato";
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 1rem;
+			gap: 1rem;
+			padding-block-end: 2rem;
+		}
+	
+		button:hover {
+			background-color: green;
+		}
+
+		h3 {
+			text-align: center;
+			color: white;
+		}
+
+		.timing_difficulty {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+
+		.dish-card {
+			background-color: gray;
+			padding: 1rem;
+			border-radius: 5px;
+		}
+
+		.outer-modal {
+			visibility: hidden;
+		}
+
+		.outer-modal.open {
+			display: block;
+			position: absolute;
+			top: 1rem;
+			left: 4rem;
+			visibility: visible;
+			background-color: rebeccapurple;
+			height: 40rem;
+			width: 30rem;
+		}
+	</style>
 	<body>
-		<div class="container"></div>
+		<h2>Hello  world, welcome to this restaurant!!</h2>
+		<div class="container">
+			
+		</div>
+
+		<div class="outer-modal">
+			<div class="inner-modal"></div>
+		</div>
 		<button class="generate">GENERATE RECIPES</button>
 	</body>
 	<script src="script.js"></script>
