@@ -101,15 +101,22 @@ const recipeDetails = (e) => {
 		const parent = e.target.closest(".dish-card");
 		const id = parent.dataset.id;
 		const recipe = recipes.find(singleRecipe => singleRecipe.id === id);
-		console.log(recipe);
+		const stepsList = recipe.steps;
+		let stepsListItem;
+		for (let i = 0; i< stepsList.length; i++) {
+			const htmlstepsList = recipe.steps[i];
+			stepsListItem = htmlstepsList;
+			console.log(stepsListItem)
+		}
 			const myHTML = `
-				<h2>${recipe.name}</h2>
+			<h2>${recipe.title} by <small>${recipe.author}</small></h2>
+			<img src = "${recipe.picture}">
+			<p>${recipe.steps}</p>
 			`
-			console.log(recipe.name);
 			innerModal.insertAdjacentHTML("afterbegin", myHTML);
+			outerModal.classList.add("open")
 		 }
-		 
-		 outerModal.classList.add("open")
+		 console.log(outerModal);
 }
 
 window.addEventListener('click', recipeDetails);
