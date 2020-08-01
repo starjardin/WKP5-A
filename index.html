@@ -48,6 +48,16 @@
 			border-radius: 5px;
 		}
 
+		.list-conatainer {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.stp-igr-container {
+			display: flex;
+			justify-content: space-between;
+		}
+
 		.outer-modal {
 			visibility: hidden;
 		}
@@ -60,14 +70,16 @@
 			left: 25%;
 			visibility: visible;
 			background-color: rebeccapurple;
-			height: 90vh;
 			width: 30rem;
+			padding: 1rem;
 		}
 
 		.inner-modal {
 			text-align: center;
 		}
-
+		 form {
+			 padding: 2rem;
+		 }
 	</style>
 	<body>
 		<h2>Hello  world, welcome to this restaurant!!</h2>
@@ -79,6 +91,7 @@
 			<div class="inner-modal"></div>
 		</article>
 		<button class="generate">GENERATE RECIPES</button>
+		<button class="add-recipe">Add a recipe</button>
 	</body>
 	<script src="script.js"></script>
 </html>
