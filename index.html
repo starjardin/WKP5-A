@@ -53,15 +53,21 @@
 		}
 
 		.outer-modal.open {
+			border-radius: 5px;
 			display: block;
 			position: absolute;
-			top: 1rem;
-			left: 4rem;
+			top: 20%;
+			left: 25%;
 			visibility: visible;
 			background-color: rebeccapurple;
-			height: 40rem;
+			height: 90vh;
 			width: 30rem;
 		}
+
+		.inner-modal {
+			text-align: center;
+		}
+
 	</style>
 	<body>
 		<h2>Hello  world, welcome to this restaurant!!</h2>
@@ -69,9 +75,9 @@
 			
 		</div>
 
-		<div class="outer-modal">
+		<article class="outer-modal">
 			<div class="inner-modal"></div>
-		</div>
+		</article>
 		<button class="generate">GENERATE RECIPES</button>
 	</body>
 	<script src="script.js"></script>
